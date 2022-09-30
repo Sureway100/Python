@@ -41,3 +41,14 @@ while number < 10:
     print(f"Number is {number}!")  #Then by using f-string, expression specified by {} will be replaced with it's value.
     number = number + 1
     
+    
+#............................................. LIST
+#list is same thing as array in other languages
+#while 0 is th start index of the first item, -1 is the last item, -2 seconf to etc
+
+item = [1, 'ada', True, 3, '2.5']
+print(item[2])
+print(item[-1])
+
+
+    
