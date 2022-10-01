@@ -117,3 +117,4 @@ print(addr["street"])
 #get() => same thing as retrieving
 print(addr.keys())
 print(addr.value())
+print(addr.get("state"))
