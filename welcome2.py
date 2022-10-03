@@ -26,3 +26,15 @@ def print_name(name, country, age=25):
 # you can add default values to function parameters
 print_name(country='nigeria', name='merry')
 print_name('tom', 'Canada') 
+
+
+
+def sumation(*args):   # with this you can put unlimited number of arguments
+    print(args)
+    xum = 0
+    for i in args:
+        xum += i
+    return xum
+
+b = sumation(1,2,3,4,5,6,7,8,9)
+print(b)
