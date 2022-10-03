@@ -1,7 +1,7 @@
 #this is week2
 
 
-#functions
+#functions--------------------------------------------------------------
 
 #note -> Note the difference between parameters and arguments: 
 # #Function parameters are the names listed in the function's definition(placeholders). 
@@ -38,3 +38,34 @@ def sumation(*args):   # with this you can put unlimited number of arguments
 
 b = sumation(1,2,3,4,5,6,7,8,9)
 print(b)
+
+
+
+#Decorator---------------------------------------------------------------------------
+
+#A decorator is a design pattern in Python that allows a user to add new functionality to an existing 
+# object without modifying its structure.
+
+
+# define your deco function
+# define your spicy conditions to the defined deco function
+# call your function parameter inside your defined deco function
+# return your deco function
+
+def useDecora(function):
+    print('using decorators')
+    def check(a,b):
+        if b == 0:
+            print('this is not possible')
+            return
+        function(a, b)
+    return check
+
+
+@useDecora
+def divide(a, b):
+    return a / b
+
+#remainder = useDecora(divide)
+
+print('without ' , divide(10,0))
