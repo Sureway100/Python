@@ -69,3 +69,12 @@ def divide(a, b):
 #remainder = useDecora(divide)
 
 print('without ' , divide(10,0))
+
+
+# how to use *args and **kwargs in a function-----------------------------------------
+#*args => this is a non defined or specified number of arguments
+
+def add(*anything):
+    print(anything)   
+add(1,2,3,4,5,6,7,8,9)
+#output => (1, 2, 3, 4, 5, 6, 7, 8, 9)

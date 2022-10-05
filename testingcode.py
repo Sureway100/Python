@@ -1,25 +1,3 @@
-x = 0
-
-a = 5
-
-b = 5
-
-if a > 0:
-
-    if b < 0: 
-
-        x = x + 5 
-
-    elif a > 5:
-
-        x = x + 4
-
-    else:
-
-        x = x + 3
-
-else:
-
-    x = x + 2
-
-print(x)
+def add(*anything):
+    print(anything)   
+add(1,2,3,4,5,6,7,8,9,'y')
