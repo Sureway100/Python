@@ -72,9 +72,36 @@ print('without ' , divide(10,0))
 
 
 # how to use *args and **kwargs in a function-----------------------------------------
-#*args => this is a non defined or specified number of arguments
+#*args => parameter that will pack all arguments into a tuple , useful so that a function can accept varying 
+# amount of arguments..this is a non defined or specified number of arguments
+# and note because they are tuples, they are not mutable... To change it, you cast it into a list
 
 def add(*anything):
     print(anything)   
 add(1,2,3,4,5,6,7,8,9)
 #output => (1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+def add(*anything):
+    sum = 0
+    for i in anything:
+        sum += i
+    return sum   
+print('hello',add(1,2,3,4,5,6,7,8,9))
+#output => (1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+
+
+#**kwargs (keyword args) - this is a parameter that will pack all arguments into a dictionary
+#useful so that a function can accept a varying amount of keyword arguments
+#---- what we do before now
+def hello(first, last):
+    print(f'my name is  {first} {last}')
+    
+hello(last='john', first='joe')
+#- but what if someone has more than two args, it will break
+#----- what we could do
+def hello(**anything):
+    print(f'my name is  {anything}' )
+    print('my name is' + '' + anything['first'] )
+    
+hello(last='john', first='joe', middle='cent')
