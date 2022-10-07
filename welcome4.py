@@ -19,4 +19,21 @@
 # simple_django_project\Scripts\activate
 
 
-# DJANGO-----------------------------------
+# DJANGO-----------------------------------using virtualenv
+from tkinter import PROJECTING
+from venv import create
+import django
+import virtualenv
+
+
+# pip install virtualenv --- download virtualenv
+# mkdir django_project
+# cd into it
+# virtualenv simple_project_django
+# get-ExecutionPolicy -- check if restricted or not
+# Set-ExecutionPolicy Unrestricted -Scope Process
+# django_project_env1\Scripts\activate --- while inside your created folder
+#create repo same directory, same directory as virtualenv
+# create django project (virtualenv) inside repo
+# create django app   (virtualenv) same directory as project
+# pip freeze > requirements.txt
